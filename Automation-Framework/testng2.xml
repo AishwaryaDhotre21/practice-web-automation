@@ -1,0 +1,45 @@
+<suite name="DSP Automation Suite" parallel="tests" thread-count="6" >
+
+    <listeners>
+        <listener class-name="com.confluxsys.dsp.automation.utills.SuiteListener"/>
+        <listener class-name="com.confluxsys.dsp.automation.utills.SendReport"/>
+    </listeners>
+
+    <test name="CampaignCreationTestCases" >
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="com.confluxsys.dsp.automation.testcases.uaradministration.CampaignCreationTestCases"></class>
+        </classes>
+    </test>
+    <test name="CampaignCreationTestCases_1" >
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="com.confluxsys.dsp.automation.testcases.uaradministration.CampaignCreationTestCases_1"></class>
+        </classes>
+    </test>
+  <test name="DemoClass_1"  >
+      <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="com.confluxsys.dsp.automation.testcases.accessreview.DemoClass_1"></class>
+        </classes>
+    </test>
+    <test name="DemoClass_2"  >
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="com.confluxsys.dsp.automation.testcases.accessreview.DemoClass_2"></class>
+        </classes>
+    </test>
+    <test name="DemoClassToTestSoftAssert"  >
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="com.confluxsys.dsp.automation.testcases.accessreview.DemoClassToTestSoftAssert"></class>
+        </classes>
+    </test>
+    <test name="DemoClassToTestHardAssertion"  >
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="com.confluxsys.dsp.automation.testcases.accessreview.DemoClassToTestHardAssertion"></class>
+        </classes>
+    </test>
+
+</suite>

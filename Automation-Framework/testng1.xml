@@ -1,0 +1,26 @@
+<suite name="DSP Automation Suite" parallel="classes" >
+
+<listeners>
+    <listener class-name="com.confluxsys.dsp.automation.utills.SuiteListener"/>
+    <listener class-name="com.confluxsys.dsp.automation.utills.SendReport"/>
+</listeners>
+
+    <test name="UAR Administration Page related test cases" thread-count="2">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="com.confluxsys.dsp.automation.testcases.uaradministration.CampaignCreationTestCases"></class>
+            <class name="com.confluxsys.dsp.automation.testcases.uaradministration.CampaignCreationTestCases_1"></class>
+        </classes>
+    </test>
+    <test name="Access Review related test cases"  thread-count="4">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="com.confluxsys.dsp.automation.testcases.accessreview.DemoClass_1"></class>
+            <class name="com.confluxsys.dsp.automation.testcases.accessreview.DemoClass_2"></class>
+            <class name="com.confluxsys.dsp.automation.testcases.accessreview.DemoClassToTestSoftAssert"></class>
+            <class name="com.confluxsys.dsp.automation.testcases.accessreview.DemoClassToTestHardAssertion"></class>
+        </classes>
+    </test>
+
+
+</suite>

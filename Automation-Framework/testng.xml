@@ -1,0 +1,33 @@
+<suite name="DSP Automation Suite" >
+
+    <listeners>
+        <listener class-name="com.confluxsys.dsp.automation.utills.SuiteListener"/>
+        <listener class-name="com.confluxsys.dsp.automation.utills.SendReport"/>
+    </listeners>
+    <!--  <test name="Basic Login Functionality">
+          <classes>
+              <class name="com.confluxsys.dsp.automation.testcases.uaradministration.HomePageTestCases"></class>
+          </classes>
+      </test> -->
+    <test name="UAR Administration Page related test cases" >
+        <classes>
+            <class name="com.confluxsys.dsp.automation.testcases.uaradministration.CampaignCreationTestCases"></class>
+            <class name="com.confluxsys.dsp.automation.testcases.uaradministration.CampaignCreationTestCases_1"></class>
+        </classes>
+    </test>
+    <test name="Access Review related test cases"  >
+        <classes>
+            <class name="com.confluxsys.dsp.automation.testcases.accessreview.DemoClass_1"></class>
+            <class name="com.confluxsys.dsp.automation.testcases.accessreview.DemoClass_2"></class>
+            <class name="com.confluxsys.dsp.automation.testcases.accessreview.DemoClassToTestSoftAssert"></class>
+            <class name="com.confluxsys.dsp.automation.testcases.accessreview.DemoClassToTestHardAssertion"></class>
+        </classes>
+    </test>
+
+    <!-- <test name="Demo test 4">
+         <classes>
+             <class name="com.confluxsys.dsp.automation.testcases.accessreview.DemoClass_2"></class>
+         </classes>
+     </test>
+ -->
+</suite>
